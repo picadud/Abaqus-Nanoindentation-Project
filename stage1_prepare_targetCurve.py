@@ -42,7 +42,7 @@ def main_prepare_targetCurve(info):
         # get the corresponding displacement
         largest_displacement = expDisplacement[indices]
         largest_force = expForce[indices]
-
+#Question: why taking the center, and does largest displacement necessarily correspond to largest force
         # Taking the mean is a good approximation for the center
         x_center, y_center = np.mean(largest_displacement), np.mean(largest_force)
         targetCenter = {"X": x_center, "Y": y_center}

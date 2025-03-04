@@ -42,7 +42,7 @@ def main_run_initialSims(info):
         print(f"Number of initial simulations: {len(initialParams)}. Parameters is loaded from {resultPath}\n")
         print("If you want to regenerate the initialParameters.npy, please delete initialParameters.npy and run the program again\n")
     else:
-        
+      #Question: SIMULATION? 
         sim = SIMULATION(info)
         initialParams = sim.sobol_sequence_sampling()
         # parameters = sim.latin_hypercube_sampling()
